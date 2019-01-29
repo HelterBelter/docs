@@ -1,16 +1,20 @@
-=================================
-Setup OpenVPN client connection to a VPN provider that uses client certificates for authentication
-=================================
+
+
+Setup OpenVPN client connection to a VPN provider that uses client certificate and client key for authentication
+=================================================================================================================
+
 This is e.g. for a connection to Cyberghost VPN.
 
 You should have the following files from your VPN provider:
-- ca.crt      (to create a certificate authority in OPNsense)
-- client.crt  (client certificate)
-- client.key  (your client key)
+* ca.crt      (to create a certificate authority in OPNsense)
+* client.crt  (client certificate)
+* client.key  (your client key)
 
-----------------
+
+
 Create Certificate Authority
 ----------------
+
 In the Web-GUI for your OPNsense installation click on 
 ** System **
   Trust
